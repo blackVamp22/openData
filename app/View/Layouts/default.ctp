@@ -30,14 +30,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css(array('cake.generic', 'maps'));
+		echo $this->Html->css(array( 'maps', 'berlin'));
 
 		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
+		echo $this->fetch('css');		
 	?>
 	 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
 	  <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+	  <script src="http://code.jquery.com/jquery-latest.min.js"></script>	 
+	  <script src="https://raw.githubusercontent.com/caleb531/jcanvas/master/jcanvas.min.js"></script>	 
+	  
 </head>
 <body>
 	<div id="container">
@@ -55,5 +57,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+
+	<?php echo $this->Html->script( array( 'jcanvas.js') ); ?>
+	<?php echo $this->fetch('script'); ?>
 </body>
 </html>

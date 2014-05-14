@@ -1,0 +1,17 @@
+#berlin{
+	width: 1246px;
+	height: 1024px;
+	margin: auto;
+}
+
+#berlin-bg{
+	width: 1305px;
+	height: 1024px;
+	background-image: url(../img/berlin.svg.png);
+	background-size: contain;
+}
+
+#berlin canvas{
+	width: 1305px;
+}
+

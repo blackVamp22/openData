@@ -9,6 +9,11 @@ class MapsController extends AppController {
 		
 	}
 
+	public function berlin()
+	{
+		
+	}
+
 
 }
 
